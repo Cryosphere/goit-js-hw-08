@@ -11,8 +11,8 @@ const gallery = document.querySelector('.gallery');
 const items = [];
 
 galleryItems.forEach((item) => {
-  const galleryListItem = document.createElement('li');
-  galleryListItem.classList.add('gallery__item');
+//   const galleryListItem = document.createElement('li');
+//   galleryListItem.classList.add('gallery__item');
 
   const galleryLink = document.createElement('a');
   galleryLink.classList.add('gallery__link');
@@ -25,8 +25,8 @@ galleryItems.forEach((item) => {
   galleryImage.setAttribute('title', item.description);
 
   galleryLink.appendChild(galleryImage);
-  galleryListItem.appendChild(galleryLink);
-  items.push(galleryListItem);
+//   galleryListItem.appendChild(galleryLink);
+  items.push(galleryLink);
 });
 
 gallery.append(...items);
